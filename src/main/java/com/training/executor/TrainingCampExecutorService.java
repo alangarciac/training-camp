@@ -2,10 +2,7 @@ package com.training.executor;
 
 import java.time.Duration;
 import java.time.Instant;
-import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.*;
-import java.util.stream.Stream;
 
 public class TrainingCampExecutorService {
 
@@ -14,8 +11,8 @@ public class TrainingCampExecutorService {
     public static void main(String[] args) {
 
         threadTest();
-        //executorSingleThreadTest();
-        //executorCallableTest();
+        executorSingleThreadTest();
+        executorCallableTest();
 
     }
 
