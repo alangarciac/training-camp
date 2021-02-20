@@ -1,4 +1,4 @@
-package test.coding;
+package training.functional;
 @FunctionalInterface
 public interface Operation {
 

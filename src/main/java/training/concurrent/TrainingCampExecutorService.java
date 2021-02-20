@@ -1,4 +1,4 @@
-package com.training.executor;
+package training.concurrent;
 
 import java.time.Duration;
 import java.time.Instant;

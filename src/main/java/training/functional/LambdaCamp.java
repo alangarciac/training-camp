@@ -1,4 +1,4 @@
-package test.coding;
+package training.functional;
 
 import java.time.Duration;
 import java.time.Instant;
