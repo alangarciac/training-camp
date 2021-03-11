@@ -1,5 +1,9 @@
-# training-camp
+## Training Camp :pencil2::clipboard:
 
-In this project I was writting code to test and improve optimal changes to best executors in Java.
+In this project I wrote code to test and investigate different approachs in Java.
 
-In class ExecutorServicesNumberOfThreads you can see differents approachs to understand and test the best solutions depending on the level of parallelism of your processor.
+You could find things as:
+
+* Concurrent Map processing time comparissons
+* Executors comparisson depending of parallelism level in your processor
+* Lambda and functional programing providing since Java > 8
