@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class HasDuplicated {
-    
+
     /**
      * Giving 10 numbers between 1..10, check if exist any duplicates.
      * hasDuplicates(List<Integer> numbers)
