@@ -3,11 +3,6 @@ package training.oop;
 public class Stone implements Game{
 
     @Override
-    public Game vs(Game game) {
-        return game.vs(this);
-    }
-
-    @Override
     public Game vs(Stone stone) {
         return this;
     }
