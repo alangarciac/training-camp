@@ -11,6 +11,7 @@ import training.functional.predicate.GreenApplePredicate;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
@@ -48,6 +49,11 @@ public class PredicateCamp {
                         .collect(Collectors.toList()),
                 new ApplePrintColorAndWeight()
         );
+
+        System.out.println("Printing only Red Apples ... ");
+        Predicate<Apple> onlyRedApples = (Apple a) -> a.getColor().equals(Color.RED);
+        prettyPrintApplePredicate(apples, onlyRedApples);
+
         System.out.println("--");
 
         System.out.println("Printing Apples ordering by weight DESC ... ");
@@ -58,6 +64,10 @@ public class PredicateCamp {
 
     private static void prettyPrintApple(List<Apple> inventory, ApplePrinterPredicate applePrinterPredicate) {
         inventory.forEach(apple -> System.out.println(applePrinterPredicate.print(apple)));
+    }
+
+    private static void prettyPrintApplePredicate(List<Apple> inventory, Predicate<Apple> predicate) {
+        inventory.stream().filter(predicate).forEach(a -> System.out.println(a.toString()));
     }
 
     private static List<Apple> initApples() {

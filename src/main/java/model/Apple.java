@@ -17,4 +17,12 @@ public class Apple {
     public String getWeight() {
         return weight;
     }
+
+    @Override
+    public String toString() {
+        return "Apple{" +
+                "color=" + color +
+                ", weight='" + weight + '\'' +
+                '}';
+    }
 }
